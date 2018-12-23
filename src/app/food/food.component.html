@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="col-md-12">
+    <h1>Foods Tracked</h1>
+      <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th class="text-center">ID</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Description</th>
+        <th class="text-center">Carbs</th>
+        <th class="text-center">Proteins</th>
+        <th class="text-center">Fats</th>
+        <th class="text-center">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let food of foods">
+        <td>{{ food.id }}</td>
+        <td>{{ food.name }}</td>
+        <td>{{ food.description }}</td>
+        <td>{{ food.carbs }}</td>
+        <td>{{ food.proteins }}</td>
+        <td>{{ food.fats }}</td>
+        <td>
+          <button class="btn btn-info"
+                        (click)="showEditFoodForm(food)">
+                       <i class="fa fa-edit"></i>
+              </button>
+          <button class="btn btn-danger"
+                       (click)="removeFood(food)">
+                       <i class="fa fa-minus"></i>
+            </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-success"
+               (click)="showAddFoodForm()"><i class="fa fa-plus"></i></button>
+  <br />
+  <br />
+
+  <form *ngIf="foodForm">
+    <h2>Add New Food</h2>
+    <p>ID: <input type="text"
+                           name="id"
+                           [(ngModel)]="newFood.id" /></p>
+    <p>Name: <input type="text"
+                                 name="name"
+                                 [(ngModel)]="newFood.name" /></p>
+    
+    <p>Desc.: <input type="text"
+                                 name="description"
+                                 [(ngModel)]="newFood.description" /></p>
+    <p>Carbs: <input type="text"
+                                 name="carbs"
+                                 [(ngModel)]="newFood.carbs" /></p>
+    <p>Proteins: <input type="text"
+                                 name="proteins"
+                                 [(ngModel)]="newFood.proteins" /></p>
+    <p>Fats: <input type="text"
+                                 name="fats"
+                                 [(ngModel)]="newFood.fats" /></p>
+    
+    <p>
+      <button type="button"
+                   class="btn btn-primary"
+                   (click)="saveFood(newFood)">Submit</button>
+      <button type="button"
+                   class="btn btn-warning"
+                   (click)="cancelNewFood()">Cancel</button>
+    </p>
+   </form>
+
+    <form *ngIf="editFoodForm">
+    <h2>Edit Foods</h2>
+    <p>ID: <input type="text"
+                           name="id"
+                           [(ngModel)]="editedFood.id" /></p>
+    <p>Name: <input type="text"
+                                 name="name"
+                                 [(ngModel)]="editedFood.name" /></p>
+    <p>Desc.: <input type="text"
+                                 name="description"
+                                 [(ngModel)]="editedFood.description" /></p>
+    <p>Carbs: <input type="text"
+                                 name="carbs"
+                                 [(ngModel)]="editedFood.carbs" /></p>
+    <p>Proteins: <input type="text"
+                                 name="proteins"
+                                 [(ngModel)]="editedFood.proteins" /></p>
+    <p>Fats: <input type="text"
+                                 name="fats"
+                                 [(ngModel)]="editedFood.fats" /></p>
+
+    
+    <p>
+      <button type="button"
+                   class="btn btn-primary"
+                   (click)="updateFood(editedFood)">Submit</button>
+      <button type="button"
+                   class="btn btn-warning"
+                   (click)="cancelEdits()">Cancel</button>
+    </p>
+   </form>
+  </div>
+</div>
