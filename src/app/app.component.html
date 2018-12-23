@@ -1,10 +1,12 @@
 <app-nav></app-nav>
-<h1>{{title}}</h1>
-	<div>
-		<p></p>
+
+
+	<div align="center">
+		<h1>{{title}}</h1>
+		<p>
+			<li><a routerLink="/food" routerLinkActive="active">Foods</a></li>
+			<li><a routerLink="/about" routerLinkActive="active">About</a></li>
+		</p>
 	</div>
-    <ul>
-    	<li><a routerLink="/food" routerLinkActive="active">Foods</a></li>
-    	<li><a routerLink="/about" routerLinkActive="active">About</a></li>
-    </ul>
+  
   <router-outlet></router-outlet>
