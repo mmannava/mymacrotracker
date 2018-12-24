@@ -1,6 +1,6 @@
 # mymacrotracker
 
-*clone the repo
+* clone the repo
 * switch to the root and run 
 ```
 npm install
