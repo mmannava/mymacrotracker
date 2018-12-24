@@ -5,7 +5,7 @@
 ```
 npm install
 ```
-then run
+* then run
 ```
 ng serve
 ```
