@@ -20,5 +20,5 @@ ng serve
 * CRUD 
 * Source control using Git
 * node package management
-* deployment on netlify cloud platform
+* deployment on netlify cloud environment
 
