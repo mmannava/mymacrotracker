@@ -20,5 +20,5 @@ ng serve
 * node package management
 * deployment on netlify cloud environment
 
-* This app is deployed using netlify, 
+### App Deployment URL: 
 [https://myfoodtrackerbymanasamannava.netlify.com/](https://myfoodtrackerbymanasamannava.netlify.com/)
