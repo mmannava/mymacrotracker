@@ -18,4 +18,5 @@ ng serve
 * Javascript (as typescript is superset of javascript)
 * angular7 a popular front end framework
 * CRUD 
+* Source control using Git
 
