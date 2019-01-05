@@ -12,8 +12,9 @@ ng serve
 * This app is deployed using netlify, 
 [https://myfoodtrackerbymanasamannava.netlify.com/](https://myfoodtrackerbymanasamannava.netlify.com/)
 
-### concepts illustrated
+### Concepts Illustrated
 * web application development
 * Javascript
 * angular7 a popular front end framework
+* CRUD 
 
