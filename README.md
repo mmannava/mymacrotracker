@@ -14,7 +14,8 @@ ng serve
 
 ### Concepts Illustrated
 * web application development
-* Javascript
+* Typescript
+* Javascript (as typescript is superset of javascript)
 * angular7 a popular front end framework
 * CRUD 
 
