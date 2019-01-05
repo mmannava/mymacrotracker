@@ -10,4 +10,4 @@ npm install
 ng serve
 ```
 * This app is deployed using netlify, 
-[Click Here To View](https://myfoodtrackerbymanasamannava.netlify.com/)
+[https://myfoodtrackerbymanasamannava.netlify.com/](https://myfoodtrackerbymanasamannava.netlify.com/)
