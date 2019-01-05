@@ -9,8 +9,6 @@ npm install
 ```
 ng serve
 ```
-* This app is deployed using netlify, 
-[https://myfoodtrackerbymanasamannava.netlify.com/](https://myfoodtrackerbymanasamannava.netlify.com/)
 
 ### Concepts Illustrated
 * web application development
@@ -22,3 +20,5 @@ ng serve
 * node package management
 * deployment on netlify cloud environment
 
+* This app is deployed using netlify, 
+[https://myfoodtrackerbymanasamannava.netlify.com/](https://myfoodtrackerbymanasamannava.netlify.com/)
