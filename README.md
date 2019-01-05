@@ -19,4 +19,6 @@ ng serve
 * angular7 a popular front end framework
 * CRUD 
 * Source control using Git
+* node package management
+* deployment on netlify cloud platform
 
